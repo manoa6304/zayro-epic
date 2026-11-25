@@ -173,6 +173,11 @@ h2 {
 .about p {
     color: #b9c4d6;
     max-width: 700px;
+    margin-bottom: 15px;
+}
+
+.about a {
+    color: var(--accent);
 }
 
 /* FOOTER */

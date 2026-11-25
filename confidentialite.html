@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Politique de confidentialité du projet ZayroTechBoost, édité par ZayroTech.">
-  <title>Politique de confidentialité — ZayroTechBoost</title>
+  <meta name="description" content="Politique de confidentialité de ZayroTechBoost, projet édité par ZayroTech.">
+  <meta name="author" content="ZayroTech">
+  <link rel="canonical" href="https://zayrotech.online/confidentialite.html">
+  <title>Confidentialité — ZayroTechBoost</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,106 +22,130 @@
   <main class="about">
     <span class="tag">INFORMATIONS LÉGALES</span>
     <h1>Politique de confidentialité</h1>
-    <p class="muted">Dernière mise à jour : 24 novembre 2026</p>
+    <p class="muted">Dernière mise à jour : 25 novembre 2026</p>
 
     <h2>1. Responsable du projet</h2>
     <p>
-      Le projet ZayroTechBoost est édité par ZayroTech.
-      Contact relatif aux données personnelles : <strong><a href="mailto:manoa6403@gmail.com">manoa6403@gmail.com</a></strong>.
+      ZayroTechBoost est un projet indépendant édité par ZayroTech.
+      Pour toute question relative aux données personnelles :
+      <a href="mailto:manoa6403@gmail.com">manoa6403@gmail.com</a>.
     </p>
 
     <h2>2. Périmètre</h2>
     <p>
-      Cette politique concerne le site zayrotech.online et le bot Discord ZayroTechBoost.
-      Le bot fonctionne au sein de Discord. Certaines fonctions peuvent ouvrir une page
-      de connexion Epic lorsque l'utilisateur choisit de lancer cette fonction.
+      Cette politique concerne le site zayrotech.online et le bot Discord
+      ZayroTechBoost. Le bot fonctionne au sein de la plateforme Discord.
+      Certaines commandes peuvent ouvrir une page de connexion Epic
+      lorsque l'utilisateur choisit de lancer cette fonction.
     </p>
 
     <h2>3. Données traitées</h2>
     <p>
-      Lorsqu'un utilisateur lance la commande de connexion Epic dans le bot, le code
-      actuellement examiné transmet au webhook configuré le nom d'utilisateur Discord
-      et l'identifiant Discord afin de signaler le démarrage de la demande de connexion.
-      Le bot crée également une valeur d'état temporaire associée à l'utilisateur
-      pour cette tentative de connexion.
-    </p>
-    <p>
-      Le code examiné conserve cet état temporaire en mémoire pendant l'exécution du bot
-      et écrit des événements techniques dans un fichier de journal configuré.
-      Les informations exactes présentes dans tous les journaux doivent être vérifiées
-      dans la configuration et les fichiers du serveur avant mise en production.
-    </p>
-    <p>
-      Le code de connexion examiné ne permet pas de confirmer qu'un profil Epic est
-      effectivement récupéré ni que la procédure complète de liaison de compte est
-      opérationnelle. Aucune collecte de données de profil Epic ne doit être annoncée
-      tant que cette fonction n'est pas effectivement mise en place et vérifiée.
+      Lorsqu'un utilisateur lance la commande de connexion Epic,
+      le code actuellement examiné transmet au webhook configuré
+      son nom d'utilisateur Discord et son identifiant Discord
+      afin de signaler le démarrage de la demande.
     </p>
 
-    <h2>4. Finalités</h2>
-    <p>Les données décrites ci-dessus peuvent être utilisées pour :</p>
+    <p>
+      Le bot crée également une valeur d'état temporaire associée
+      à l'utilisateur pour cette tentative de connexion.
+      Cet état est conservé en mémoire pendant l'exécution du bot.
+    </p>
+
+    <p>
+      Le bot écrit également des événements techniques dans
+      un fichier de journal configuré sur l'environnement
+      qui l'exécute.
+    </p>
+
+    <p>
+      Le code de connexion actuellement examiné ne permet pas
+      de confirmer la récupération effective d'informations
+      de profil Epic ni le fonctionnement complet de la liaison
+      de compte. Aucune récupération de profil Epic n'est annoncée
+      dans cette politique.
+    </p>
+
+    <h2>4. Utilisation des données</h2>
+    <p>Les données décrites ci-dessus peuvent servir à :</p>
     <ul>
-      <li>déclencher et suivre techniquement une demande de connexion initiée par l'utilisateur ;</li>
-      <li>associer temporairement une tentative à l'utilisateur Discord concerné ;</li>
-      <li>assurer le fonctionnement, la sécurité et le diagnostic du bot.</li>
+      <li>identifier l'utilisateur Discord qui lance une commande ;</li>
+      <li>suivre techniquement une demande de connexion ;</li>
+      <li>associer temporairement une tentative à un utilisateur ;</li>
+      <li>assurer le fonctionnement et le diagnostic du bot.</li>
     </ul>
 
-    <h2>5. Stockage et durée de conservation</h2>
+    <h2>5. Stockage et conservation</h2>
     <p>
-      L'état de connexion temporaire est conservé en mémoire et disparaît lorsque le
-      processus du bot s'arrête ou lorsque l'état est supprimé par le programme.
-      Les journaux sont écrits dans un fichier configuré sur l'environnement qui héberge
-      le bot. La durée exacte de conservation de ces journaux et celle des données reçues
-      par le service de webhook ne sont pas encore confirmées.
+      L'état temporaire de connexion est conservé en mémoire
+      et disparaît lorsque le processus du bot s'arrête
+      ou lorsque le programme le supprime.
     </p>
     <p>
-      <strong>Avant publication, l'éditeur doit définir et appliquer une durée de conservation
-      précise pour les journaux et vérifier la durée de conservation du service de webhook.</strong>
-      Cette politique devra être mise à jour avec ces durées exactes.
+      Les événements techniques sont écrits dans un fichier
+      de journal local. Les messages envoyés au webhook
+      sont conservés dans le service Discord associé.
+    </p>
+    <p>
+      Les durées exactes de conservation des journaux locaux
+      et des messages du webhook dépendent des paramètres
+      de conservation et de suppression effectivement appliqués.
+      L'éditeur doit les vérifier et les définir.
     </p>
 
     <h2>6. Destinataires et services tiers</h2>
     <p>
-      Les données nécessaires au fonctionnement du bot sont traitées par Discord.
-      Lors du démarrage de la commande de connexion, le nom et l'identifiant Discord
-      sont envoyés au service associé à l'URL de webhook configurée par l'éditeur.
-      Si l'utilisateur choisit d'ouvrir une connexion Epic, il est redirigé vers les
-      services d'Epic Games. Ces services appliquent leurs propres politiques de confidentialité.
+      Le bot utilise Discord pour fonctionner et communiquer
+      avec les utilisateurs.
     </p>
     <p>
-      L'éditeur doit identifier le fournisseur du webhook et l'hébergeur du bot,
-      consulter leurs conditions de traitement et compléter ces informations si nécessaire.
+      Lors du lancement de la commande de connexion, le nom
+      et l'identifiant Discord sont envoyés au service associé
+      à l'adresse du webhook configuré par l'éditeur.
+    </p>
+    <p>
+      Si l'utilisateur choisit d'ouvrir une connexion Epic,
+      il est redirigé vers les services d'Epic Games.
+      Ces services appliquent leurs propres politiques
+      de confidentialité.
     </p>
 
     <h2>7. Sécurité</h2>
     <p>
-      L'accès aux fichiers de configuration, journaux et services d'hébergement doit être
-      limité aux personnes autorisées. Ne partagez jamais vos mots de passe ni vos codes
-      de sécurité Epic. Le bot ne doit pas demander ces informations.
+      L'accès aux fichiers de configuration, aux journaux
+      et aux services utilisés par le bot doit être limité
+      aux personnes autorisées.
+      Le bot ne doit jamais demander le mot de passe Epic
+      ni les codes de sécurité de l'utilisateur.
     </p>
 
     <h2>8. Droits et demandes</h2>
     <p>
-      Pour demander l'accès aux données vous concernant, leur rectification ou leur
-      suppression lorsque cela est applicable, contactez l'éditeur à l'adresse indiquée
-      dans la section 1. Une demande peut nécessiter une vérification raisonnable de votre identité.
+      Pour toute demande concernant les données personnelles,
+      notamment une demande d'accès, de rectification ou
+      de suppression lorsque cela est applicable,
+      contactez l'éditeur :
+      <a href="mailto:manoa6403@gmail.com">manoa6403@gmail.com</a>.
     </p>
 
     <h2>9. Mineurs</h2>
     <p>
-      Les utilisateurs mineurs doivent utiliser le service avec l'accord et l'accompagnement
-      de leur parent ou représentant légal lorsque cela est nécessaire.
+      Les utilisateurs mineurs doivent utiliser le service
+      avec l'accord et l'accompagnement de leur parent
+      ou représentant légal lorsque cela est nécessaire.
     </p>
 
     <h2>10. Modifications</h2>
     <p>
-      Cette politique sera mise à jour si les fonctions du bot, les données traitées,
-      les destinataires ou les durées de conservation changent.
+      Cette politique peut être mise à jour si les fonctionnalités
+      du bot, les données traitées, les destinataires ou les
+      durées de conservation changent.
     </p>
   </main>
 
   <footer>
-    <span>© 2026 ZayroTech</span>
+    <span>© 2026 ZayroTech — ZayroTechBoost</span>
     <a href="index.html">Accueil</a>
     <a href="contact.html">Contact</a>
   </footer>
